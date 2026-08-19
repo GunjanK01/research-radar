@@ -12,8 +12,7 @@ from app.config import settings
 from app.db import Base
 
 # Import all models here so Base.metadata is fully populated before autogenerate runs.
-# Add each new model module to this import as it's created in Phase 1.
-# from app.models import paper, author, topic  # noqa: F401
+from app.models import author, topic, paper, paper_author, paper_topic  # noqa: F401
 
 config = context.config
 config.set_main_option("sqlalchemy.url", settings.database_url)
